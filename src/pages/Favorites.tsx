@@ -1,4 +1,4 @@
-import { Box, Button, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, Grid, Heading } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../store/store";
 import MovieCard from "../components/MovieCard";
@@ -45,11 +45,11 @@ const Favorites: React.FC = () => {
           Back to Home
         </Button>
         {favoriteMovies.length > 0 ? (
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} mt={4}>
+          <Grid templateColumns="repeat(auto-fill, minmax(200px, 1fr))" gap={6}>
             {favoriteMovies.map((movie) => (
               <MovieCard key={movie.imdbID} movie={movie} />
             ))}
-          </SimpleGrid>
+          </Grid>
         ) : (
           <Box mt={6}>No favorite movies found.</Box>
         )}
