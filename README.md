@@ -13,6 +13,16 @@
 -   Allow searching for movies by title.
 
 
+## 🧰 Tech Stack
+
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Router DOM v7](https://reactrouter.com/)
+- [TSParticles](https://particles.js.org/)
+- [OMDb API](https://www.omdbapi.com/)
 
 ## 🛠️ Installation & Running Locally
 
